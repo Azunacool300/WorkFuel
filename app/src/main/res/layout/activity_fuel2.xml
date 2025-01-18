@@ -9,14 +9,14 @@
         android:orientation="vertical">
 
         <ImageView
-            android:id="@+id/btn_configuracion"
+            android:id="@+id/btn_configuracion2"
             android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="end"
-        android:layout_marginTop="1dp"
-        android:src="@drawable/configuraciones"
-        android:contentDescription="Configuración"
-        android:foreground="?android:attr/selectableItemBackground"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginTop="1dp"
+            android:src="@drawable/configuraciones"
+            android:contentDescription="Configuración"
+            android:foreground="?android:attr/selectableItemBackground"
             />
 
 
@@ -25,7 +25,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Lecturas"
+            android:text="Lecturas G2"
             android:textSize="20sp"
             android:textStyle="bold"
             android:layout_gravity="center"
@@ -47,7 +47,7 @@
                 android:textSize="16sp" />
 
             <EditText
-                android:id="@+id/input_precio_diesel"
+                android:id="@+id/input_precio_diesel2"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -69,7 +69,7 @@
                 android:textSize="16sp" />
 
             <EditText
-                android:id="@+id/input_precio_ecopais"
+                android:id="@+id/input_precio_ecopais2"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -91,7 +91,7 @@
                 android:textSize="16sp" />
 
             <EditText
-                android:id="@+id/input_precio_super"
+                android:id="@+id/input_precio_super2"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -136,7 +136,7 @@
             android:layout_marginBottom="8dp">
 
             <EditText
-                android:id="@+id/input_entrada1"
+                android:id="@+id/input_entrada1_2"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -145,7 +145,7 @@
                 android:gravity="center" />
 
             <EditText
-                android:id="@+id/input_salida1"
+                android:id="@+id/input_salida1_2"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -163,7 +163,7 @@
             android:layout_marginBottom="8dp">
 
             <EditText
-                android:id="@+id/input_entrada2"
+                android:id="@+id/input_entrada2_2"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -172,7 +172,7 @@
                 android:gravity="center" />
 
             <EditText
-                android:id="@+id/input_salida2"
+                android:id="@+id/input_salida2_2"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -190,7 +190,7 @@
             android:layout_marginBottom="8dp">
 
             <EditText
-                android:id="@+id/input_entrada3"
+                android:id="@+id/input_entrada3_2"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -199,7 +199,7 @@
                 android:gravity="center" />
 
             <EditText
-                android:id="@+id/input_salida3"
+                android:id="@+id/input_salida3_2"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -217,7 +217,7 @@
             android:layout_marginBottom="8dp">
 
             <EditText
-                android:id="@+id/input_entrada4"
+                android:id="@+id/input_entrada4_2"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -226,7 +226,7 @@
                 android:gravity="center" />
 
             <EditText
-                android:id="@+id/input_salida4"
+                android:id="@+id/input_salida4_2"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -244,7 +244,7 @@
             android:layout_marginBottom="8dp">
 
             <EditText
-                android:id="@+id/input_entrada5"
+                android:id="@+id/input_entrada5_2"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -253,7 +253,7 @@
                 android:gravity="center" />
 
             <EditText
-                android:id="@+id/input_salida5"
+                android:id="@+id/input_salida5_2"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -271,7 +271,7 @@
             android:layout_marginBottom="8dp">
 
             <EditText
-                android:id="@+id/input_entrada6"
+                android:id="@+id/input_entrada6_2"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -280,7 +280,7 @@
                 android:gravity="center" />
 
             <EditText
-                android:id="@+id/input_salida6"
+                android:id="@+id/input_salida6_2"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -289,8 +289,56 @@
                 android:gravity="center" />
         </LinearLayout>
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:layout_marginBottom="8dp">
 
+            <EditText
+                android:id="@+id/input_entrada7_2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="E7"
+                android:inputType="numberDecimal"
+                android:gravity="center" />
 
+            <EditText
+                android:id="@+id/input_salida7_2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="S7"
+                android:inputType="numberDecimal"
+                android:gravity="center" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:layout_marginBottom="8dp">
+
+            <EditText
+                android:id="@+id/input_entrada8_2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="E8"
+                android:inputType="numberDecimal"
+                android:gravity="center" />
+
+            <EditText
+                android:id="@+id/input_salida8_2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="S8"
+                android:inputType="numberDecimal"
+                android:gravity="center" />
+        </LinearLayout>
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -325,7 +373,7 @@
             android:layout_marginBottom="8dp">
 
             <EditText
-                android:id="@+id/input_caja"
+                android:id="@+id/input_caja2"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -334,7 +382,7 @@
                 android:gravity="center" />
 
             <EditText
-                android:id="@+id/input_voucher"
+                android:id="@+id/input_voucher2"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -377,7 +425,7 @@
             android:layout_marginBottom="8dp">
 
             <EditText
-                android:id="@+id/input_cheque"
+                android:id="@+id/input_cheque2"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -386,7 +434,7 @@
                 android:inputType="numberDecimal" />
 
             <EditText
-                android:id="@+id/input_recibos"
+                android:id="@+id/input_recibos2"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -419,7 +467,7 @@
             android:layout_marginBottom="8dp">
 
             <EditText
-                android:id="@+id/input_creditos"
+                android:id="@+id/input_creditos2"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -462,7 +510,7 @@
             android:layout_marginBottom="8dp">
 
             <EditText
-                android:id="@+id/input_cien"
+                android:id="@+id/input_cien2"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -471,7 +519,7 @@
                 android:inputType="numberDecimal" />
 
             <EditText
-                android:id="@+id/input_dolar"
+                android:id="@+id/input_dolar2"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -487,7 +535,7 @@
             android:layout_marginBottom="8dp">
 
             <EditText
-                android:id="@+id/input_cincuenta"
+                android:id="@+id/input_cincuenta2"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -496,7 +544,7 @@
                 android:inputType="numberDecimal" />
 
             <EditText
-                android:id="@+id/input_mocinquenta"
+                android:id="@+id/input_mocinquenta2"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -512,7 +560,7 @@
             android:layout_marginBottom="8dp">
 
             <EditText
-                android:id="@+id/input_veinte"
+                android:id="@+id/input_veinte2"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -521,7 +569,7 @@
                 android:inputType="numberDecimal" />
 
             <EditText
-                android:id="@+id/input_veinticinco"
+                android:id="@+id/input_veinticinco2"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -537,7 +585,7 @@
             android:layout_marginBottom="8dp">
 
             <EditText
-                android:id="@+id/input_diez"
+                android:id="@+id/input_diez2"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -546,7 +594,7 @@
                 android:inputType="numberDecimal" />
 
             <EditText
-                android:id="@+id/input_cendiez"
+                android:id="@+id/input_cendiez2"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -562,7 +610,7 @@
             android:layout_marginBottom="8dp">
 
             <EditText
-                android:id="@+id/input_cinco"
+                android:id="@+id/input_cinco2"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -571,7 +619,7 @@
                 android:inputType="numberDecimal" />
 
             <EditText
-                android:id="@+id/input_cencinco"
+                android:id="@+id/input_cencinco2"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -587,7 +635,7 @@
             android:layout_marginBottom="8dp">
 
             <EditText
-                android:id="@+id/input_dolars"
+                android:id="@+id/input_dolars2"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -596,7 +644,7 @@
                 android:inputType="numberDecimal" />
 
             <EditText
-                android:id="@+id/input_centavo"
+                android:id="@+id/input_centavo2"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -606,21 +654,21 @@
         </LinearLayout>
         <!-- Botón para calcular -->
         <Button
-            android:id="@+id/btn_calcular"
+            android:id="@+id/btn_calcular2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Calcular"
             android:layout_marginTop="16dp" />
         <!-- Botón para Ver Operaciones -->
         <Button
-            android:id="@+id/btn_ver_operaciones"
+            android:id="@+id/btn_ver_operaciones2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Ver Operaciones"
             android:layout_marginTop="8dp" />
         <!-- Resultados -->
         <TextView
-            android:id="@+id/txt_detalles"
+            android:id="@+id/txt_detalles2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text=""
@@ -628,7 +676,7 @@
             android:textSize="14sp"
             android:visibility="gone" />
         <TextView
-            android:id="@+id/txt_resultados"
+            android:id="@+id/txt_resultados2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text=""

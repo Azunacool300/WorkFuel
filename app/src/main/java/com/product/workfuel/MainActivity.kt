@@ -1,6 +1,8 @@
 package com.product.workfuel;
+import android.annotation.SuppressLint
 import android.content.Context
 import android.content.Intent
+import android.net.Uri
 import android.os.Bundle
 import android.util.Log
 import android.view.Menu
@@ -32,6 +34,7 @@ class MainActivity : AppCompatActivity() {
     private var totalEntradas: Double = 0.0
     private var totalBilletesYMonedas: Double = 0.0
 
+    @SuppressLint("MissingInflatedId")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.principal)
@@ -49,6 +52,8 @@ class MainActivity : AppCompatActivity() {
             findViewById<EditText>(R.id.input_entrada4),
             findViewById<EditText>(R.id.input_entrada5),
             findViewById<EditText>(R.id.input_entrada6)
+
+
         )
         val salidas = arrayOf(
             findViewById<EditText>(R.id.input_salida1),
@@ -57,11 +62,13 @@ class MainActivity : AppCompatActivity() {
             findViewById<EditText>(R.id.input_salida4),
             findViewById<EditText>(R.id.input_salida5),
             findViewById<EditText>(R.id.input_salida6)
+
         )
         val inputCaja = findViewById<EditText>(R.id.input_caja)
         val inputCheque = findViewById<EditText>(R.id.input_cheque)
         val inputVoucher = findViewById<EditText>(R.id.input_voucher)
         val inputRecibos = findViewById<EditText>(R.id.input_recibos)
+        val inputCreditos = findViewById<EditText>(R.id.input_creditos)
 
         val precioDieselEdit = findViewById<EditText>(R.id.input_precio_diesel)
         val precioEcoPaisEdit = findViewById<EditText>(R.id.input_precio_ecopais)
@@ -127,8 +134,9 @@ class MainActivity : AppCompatActivity() {
             val chequeTotal = inputCheque.text.toString().toDoubleOrNull() ?: 0.0
             val voucherTotal = inputVoucher.text.toString().toDoubleOrNull() ?: 0.0
             val recibosTotal = inputRecibos.text.toString().toDoubleOrNull() ?: 0.0
+            val creditosazul = inputCreditos.text.toString().toDoubleOrNull() ?: 0.0
 
-            totalEntradas = cajaTotal + chequeTotal + voucherTotal + recibosTotal
+            totalEntradas = cajaTotal + chequeTotal + voucherTotal + recibosTotal +creditosazul
 
             for (i in entradas.indices) {
                 val entrada = entradas[i].text.toString().toDoubleOrNull() ?: 0.0
@@ -184,7 +192,7 @@ class MainActivity : AppCompatActivity() {
                 val superGas = resultados[2] + resultados[3]
 
                 val detallesFinales = """
-            Diesel: R1 + R6 = ${String.format("%.2f", resultados[0])} + ${String.format("%.2f", resultados[5])} = ${String.format("%.2f", diesel)}
+            Diesel: R1 + R6 = ${String.format("%.2f", resultados[0])} + ${String.format("%.2f", resultados[5])}   = ${String.format("%.2f", diesel)}
             Costo Diesel: $${String.format("%.2f", resultadosFinales["Diesel"]!!)}
 
             Eco País: R2 + R5 = ${String.format("%.2f", resultados[1])} + ${String.format("%.2f", resultados[4])} = ${String.format("%.2f", ecoPais)}
@@ -221,6 +229,12 @@ class MainActivity : AppCompatActivity() {
                     showAboutDialog()
                     true
                 }
+                R.id.option2 ->{
+                    val intent = Intent(this, Fuel_2::class.java)
+                    startActivity(intent) // Inicia la nueva actividad
+                    true
+
+                }
 
                 else -> false
             }
@@ -233,14 +247,26 @@ class MainActivity : AppCompatActivity() {
             .setTitle("Acerca de")
             .setMessage(
                 """
-                Esta aplicación fue desarrollada por el Ing. Víctor Chiquito.
-                Es un proyecto de código abierto (open source).
-                Fecha de creación: 11-01-2025.
-                """.trimIndent()
+            Aplicación desarrollada por el Ing. Víctor Chiquito.
+            
+            • Proyecto: Código Abierto (Open Source)
+            • Fecha de creación: 11-01-2025
+            • Versión: 1.0.0
+            
+            ¡Gracias por usar nuestra aplicación!
+            """.trimIndent()
             )
-            .setPositiveButton("Aceptar", null)
+            .setPositiveButton("Aceptar") { dialog, _ ->
+                dialog.dismiss()
+            }
+            .setNeutralButton("Más información") { _, _ ->
+                val url = "https://tu-enlace-aqui.com" // Cambia esto por tu URL
+                val intent = Intent(Intent.ACTION_VIEW, Uri.parse(url))
+                startActivity(intent)
+            }
             .show()
     }
+
 }
 
 
